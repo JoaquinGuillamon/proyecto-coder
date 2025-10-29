@@ -1,0 +1,357 @@
+/*asi se escriben los comentarios en css*/ 
+
+/*reset general*/
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*fin del reset general*/
+
+.nombre-de-pagina{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/*encabezado index*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    color: rgb(255, 255, 255);
+    background-color:#041741;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.logo-header{
+    height: 10vh;
+}
+.ayuntamiento-header{
+    height: 10vh;
+    margin-left:2vh ;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    align-content: center;
+}
+
+header nav{
+    align-content: center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/*fin del encabezado index*/
+
+/*cuerpo del index*/
+main{
+    background-color: #ffffff;
+    color: rgb(1, 1, 58);
+    font-family: "Poppins", sans-serif;
+}
+form{
+    width: 40vw;
+    display: flex;
+    flex-flow: column wrap;
+    grid-area: form;
+}
+.foto-equipo{
+    width: 40vw;
+    border-radius: 10px;
+    grid-area: imgequipo;
+}
+.main-cont{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+.juega{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.juega-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center ;
+}
+
+input{
+    height: 5vh;
+    border-radius: 10px;
+    padding: 2px 2px 2px 20px;
+    margin: 5px 5px 10px 5px;
+}
+.enviar{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffff;
+    background-color: #008bdb;
+}
+/*fin del cuerpo del index*/
+
+/*pie del index*/
+footer{
+    background-color:#041741;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 15px 0 0 0;
+}
+footer h3{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+footer a{
+    text-align: center;
+}
+footer li{
+    list-style: none;
+}
+
+
+.der{
+    grid-area: c;
+}
+
+
+.ayuntamiento-footer{
+    width: 10vw;
+    grid-area: b;
+}
+
+.mapa{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    grid-area: a;
+}
+
+footer{
+    display: grid;
+    grid-template-areas:
+    "a a . ."
+    "a a b b"
+    "a a . ."
+    "a a c c"
+    "a a . ."
+    ;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-conocenos{
+    display: grid;
+    grid-template-areas: 
+    "b b c c"
+    ;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/*fin del pie del index*/
+
+/*conocenos*/
+
+/*cuerpo conocenos*/
+.cuerpo-conocenos{
+    text-align: center;
+}
+.subtitulo1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+/*fin del cuerpo conocenos*/
+
+/*fin de conocenos*/
+
+/*galeria*/
+
+.cuerpo-galeria{
+    display: grid;
+    grid-template-areas: 
+    "imga imgb"
+    "imgc imgd"
+    "imge imgf"
+    ;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5vh;
+}
+.a{
+    grid-area: imga;
+}
+.b{
+    grid-area: imgb;
+}
+.c{
+    grid-area: imgc;
+}
+.d{
+    grid-area: imgd;
+}
+.e{
+    grid-area: imge;
+}
+.f{
+    grid-area: imgf;
+}
+
+.img{
+    margin-bottom: 5vh;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+/*fin de galeria*/
+
+/*torneos*/
+
+
+.cuerpo-torneos{
+    display: grid;
+    grid-template-areas: 
+    "vilanova manga"
+    "nombre-vilanova nombre-manga"
+    "sanxenxo laredo"
+    "nombre-sanxenxo nombre-laredo"
+    ;
+    align-items:center;
+    justify-items:center;
+    justify-content: space-evenly;
+    padding-top: 2vh;
+}
+.vilanova{
+    border-radius: 10px;
+    grid-area: vilanova;
+}
+.manga{
+    grid-area: manga;
+    border-radius: 10px;
+}
+.sanxenxo{
+    grid-area: sanxenxo;
+    border-radius: 10px;
+}
+.laredo{
+    grid-area: laredo;
+    border-radius: 10px;
+}
+.nombre-vilanova{
+    grid-area: nombre-vilanova;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    width: 303px;
+    background-color:#041741;
+    color: #ffffff;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    border-radius: 10px;
+}
+.nombre-manga{
+    grid-area: nombre-manga;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    width: 303px;
+    background-color:#041741;
+    color: #ffffff;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    border-radius: 10px;
+}
+.nombre-sanxenxo{
+    grid-area: nombre-sanxenxo;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    width: 303px;
+    background-color:#041741;
+    color: #ffffff;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    border-radius: 10px;
+}
+.nombre-laredo{
+    grid-area: nombre-laredo;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    width: 303px;
+    background-color:#041741;
+    color: #ffffff;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    border-radius: 10px;
+}
+
+/*fin de torneos*/
+
+/*tienda*/
+.tienda{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+.productos{
+    width: 20vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.productos:hover{
+    opacity: 80%;
+}
+
+.precio{
+    padding: 2px 160px;
+    border-radius: 10px;
+    background-color: #008bdb;
+    color: #ffff;
+}
+
+.precios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: right;
+    font-size: 30px;
+    margin: 50px;
+}
+/*fin de tienda*/
+/*inicio mobile*/
+@media (min-width: 320px) and (max-width: 430px) {
+    .main-cont{
+        display: grid;
+        grid-template-areas: 
+        "imgequipo"
+        "form"
+        ;
+    }
+    header{
+        width: 100vw;
+    grid-row: 1/2 ;
+    }
+}
+/*fin mobile*/
