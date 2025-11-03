@@ -14,6 +14,28 @@
 }
 
 /*encabezado index*/
+h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    align-content: center;
+    font-weight: bold;
+
+}
+
+.container-fluid{
+    background-color: #041741;
+}
+.nav-link{
+    color: white;
+}
+.navbar-nav .nav-link.active{
+    color: white;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+
 header{
     position: sticky;
     top: 0;
@@ -37,12 +59,7 @@ header{
 }
 
 
-h1{
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    align-content: center;
-}
+
 
 header nav{
     align-content: center;
@@ -130,6 +147,7 @@ footer li{
 
 
 .der{
+    font-size: 15px;
     grid-area: c;
 }
 
@@ -181,6 +199,14 @@ footer{
 .subtitulo1{
     font-size: 40px;
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+.info{
+    font-size: 25px;
+}
+.texto-info{
+    font-size: 20px;
 }
 /*fin del cuerpo conocenos*/
 
@@ -259,6 +285,7 @@ footer{
     border-radius: 10px;
 }
 .nombre-vilanova{
+    font-size: 20px;
     grid-area: nombre-vilanova;
     margin-bottom: 10vh;
     margin-top: 2vh;
@@ -270,6 +297,7 @@ footer{
     border-radius: 10px;
 }
 .nombre-manga{
+    font-size: 20px;
     grid-area: nombre-manga;
     margin-bottom: 10vh;
     margin-top: 2vh;
@@ -281,6 +309,7 @@ footer{
     border-radius: 10px;
 }
 .nombre-sanxenxo{
+    font-size: 20px;
     grid-area: nombre-sanxenxo;
     margin-bottom: 10vh;
     margin-top: 2vh;
@@ -292,6 +321,7 @@ footer{
     border-radius: 10px;
 }
 .nombre-laredo{
+    font-size: 20px;
     grid-area: nombre-laredo;
     margin-bottom: 10vh;
     margin-top: 2vh;
@@ -328,6 +358,8 @@ footer{
     border-radius: 10px;
     background-color: #008bdb;
     color: #ffff;
+    font-size: 50px;
+
 }
 
 .precios{
@@ -336,7 +368,7 @@ footer{
     justify-content: center;
     gap: 100px;
     text-align: right;
-    font-size: 30px;
+    font-size: 35px;
     margin: 50px;
 }
 /*fin de tienda*/

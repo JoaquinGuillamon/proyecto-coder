@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css".css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>TORNEOS | Fuengirola BMP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,30 +12,42 @@
 
 </head>
 <body>
+
     <header>
-        <a href="../index.html">
-            <img class="logo-header" src="../assets/logo-fuengirola.png" alt="Logo del Club">
-            <img class="ayuntamiento-header" src="../assets/ayuntamiento-fuengirola.png" alt="Ayuntamiento de Fuengirola">
-        </a>
-
-        <h1>Club Deportivo Playas de Fuengirola</h1>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./conocenos.html">Conocenos</a>
-                </li>
-                <li><a href="./galeria.html">Galeria</a>
-                </li>
-                <li><a href="./torneos.html">Torneos</a>
-                </li>
-                <li><a href="./tienda.html">Tienda</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid w-100 justify-content-around">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo-header" src="../assets/logo-fuengirola.png" alt="Logo del Club">
+                    <img class="ayuntamiento-header" src="../assets/ayuntamiento-fuengirola.png" alt="Ayuntamiento de Fuengirola">
+                </a>
+                <h1>Club Deportivo Playas de Fuengirola</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./conocenos.html">Conocenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+    
 
 <main>
     <div class="cuerpo-torneos">
@@ -54,5 +67,8 @@
                 <h3 class="der">© Club Deportivo Playas de Fuengirola - 2025</h3>
         <img class="ayuntamiento-footer" src="../assets/ayuntamiento-fuengirola.png" alt="Ayuntamiento de Fuengirola">
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
