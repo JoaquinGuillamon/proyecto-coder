@@ -21,9 +21,9 @@
         width: 40vw;
     }
     .juega{
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight:bold ;
+    font-size: v.$titulos;
+    text-transform: v.$mayuscula;
+    font-weight: v.$negrita;
     margin-bottom: v.$bordes;
     color: v.$fuente-secundaria;
     text-align: center;
@@ -42,8 +42,8 @@
         margin: 5px 5px 10px 5px;
     }
     .enviar{
-    font-size: 16px;
-    text-transform: uppercase;
+    font-size: v.$texto;
+    text-transform: v.$mayuscula;
     color: v.$fuente-primaria;
     background-color: v.$color-acento;
     }

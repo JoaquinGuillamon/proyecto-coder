@@ -30,7 +30,7 @@
     border-radius: v.$bordes;
 }
 .nombre-vilanova{
-    font-size: 20px;
+    font-size: v.$texto;
     grid-area: nombre-vilanova;
     margin-bottom: 10vh;
     margin-top: 2vh;
@@ -42,7 +42,7 @@
     border-radius: v.$bordes;
 }
 .nombre-manga{
-    font-size: 20px;
+    font-size: v.$texto;
     grid-area: nombre-manga;
     margin-bottom: 10vh;
     margin-top: 2vh;
@@ -54,7 +54,7 @@
     border-radius: v.$bordes;
 }
 .nombre-sanxenxo{
-    font-size: 20px;
+    font-size: v.$texto;
     grid-area: nombre-sanxenxo;
     margin-bottom: 10vh;
     margin-top: 2vh;
@@ -66,7 +66,7 @@
     border-radius: v.$bordes;
 }
 .nombre-laredo{
-    font-size: 20px;
+    font-size: v.$texto;
     grid-area: nombre-laredo;
     margin-bottom: 10vh;
     margin-top: 2vh;
