@@ -1,0 +1,57 @@
+//aca va a ir todo el codigo de css y sass de mi header y su responsive//
+@use "variables" as v;
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+    margin: 0 0 15px 0;
+    background-color: v.$background;
+    color: v.$fuente-primaria;
+    font-family: v.$fuente;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    h1{
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        align-content: center;
+        font-weight: bold;
+        color: v.$fuente-primaria;
+    }
+    .container-fluid{
+        background-color: v.$background;
+    }
+    .nav-link{
+        color: v.$fuente-primaria;
+    }
+    .navbar-nav .nav-link.active{
+        color: v.$fuente-primaria;
+    }
+    .navbar-collapse{
+        flex-grow: 0;
+    }
+    .logo-header{
+        height: 10vh;
+    }
+    .ayuntamiento-header{
+        height: 10vh;
+        margin-left: 2vh;
+    }
+    nav{
+        align-content: center;
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            li{
+                a{
+                    color: v.$fuente-primaria;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    }

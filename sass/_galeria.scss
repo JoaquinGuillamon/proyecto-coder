@@ -1,0 +1,36 @@
+@use "variables" as v;
+.cuerpo-galeria{
+    display: grid;
+    grid-template-areas: 
+    "imga imgb"
+    "imgc imgd"
+    "imge imgf"
+    ;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5vh;
+    .a{
+    grid-area: imga;
+    }
+    .b{
+    grid-area: imgb;
+    }
+    .c{
+    grid-area: imgc;
+    }
+    .d{
+    grid-area: imgd;
+    }
+    .e{
+    grid-area: imge;
+    }
+    .f{
+    grid-area: imgf;
+    }
+    .img{
+    margin-bottom: 5vh;
+    width: 90%;
+    height: auto;
+    border-radius: v.$bordes;
+}
+}

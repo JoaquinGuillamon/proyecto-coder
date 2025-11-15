@@ -1,0 +1,81 @@
+@use "variables" as v;
+
+.cuerpo-conocenos{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    color: v.$fuente-secundaria;
+}
+.subtituloa{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
+.subtitulob{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
+.info{
+    font-size: 25px;
+    text-align: center;
+}
+.info-horarios{
+    display: grid;
+    color: v.$fuente-secundaria;
+    grid-template-areas: 
+    "tinfa tcade tjuve"
+    "hinfa hcade hjuve"
+    ;
+    text-align: center;
+    margin:100px 0;
+    color: v.$fuente-primaria;
+    gap: 1vw;
+    justify-items: center;
+}
+.infa{
+    background-color: v.$background;
+    width: 50%;
+    padding: 2vw;
+}
+.tinfa{
+    grid-area: tinfa;
+}
+.hinfa{
+    grid-area: hinfa;
+}
+.cade{
+    background-color: v.$background;
+    width: 50%;
+    padding: 2vw;
+}
+.tcade{
+    grid-area: tcade;
+}
+.hcade{
+    grid-area: hcade;
+}
+.juve{
+    background-color: v.$background;
+    width: 50%;
+    padding: 2vw;
+}
+.tjuve{
+    grid-area: tjuve;
+}
+.hjuve{
+    grid-area: hjuve;
+}
+
+.texto-info{
+    font-size: 20px;
+}
+.mapa-cono{
+    display: block;
+    margin: 50px auto;
+    border-radius: v.$bordes;
+}

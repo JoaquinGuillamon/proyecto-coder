@@ -1,0 +1,50 @@
+@use "variables" as v;
+.main-cont{
+    background-color: v.$fuente-primaria;
+    color: v.$fuente-secundaria;
+    font-family: v.$fuente;
+    display: grid;
+    grid-template-areas: 
+    "foto-equipo form"
+    ;
+    justify-items: center;
+    align-items: center;
+    form{
+        width: 40vw;
+        display: flex;
+        flex-flow: column wrap;
+        grid-area: form;
+    }
+    .foto-equipo{
+        grid-area: imgequipo;
+        border-radius: v.$bordes;
+        width: 40vw;
+    }
+    .juega{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight:bold ;
+    margin-bottom: v.$bordes;
+    color: v.$fuente-secundaria;
+    text-align: center;
+    }
+    .foto-equipo{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center ;
+        grid-area: foto-equipo;
+    }
+    input{
+        height: 5vh;
+        border-radius: v.$bordes;
+        padding: 2px 2px 2px 20px;
+        margin: 5px 5px 10px 5px;
+    }
+    .enviar{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: v.$fuente-primaria;
+    background-color: v.$color-acento;
+    }
+}

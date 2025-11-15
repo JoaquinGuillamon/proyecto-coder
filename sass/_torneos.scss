@@ -1,0 +1,79 @@
+@use "variables" as v;
+.cuerpo-torneos{
+    display: grid;
+    grid-template-areas: 
+    "vilanova manga"
+    "nombre-vilanova nombre-manga"
+    "sanxenxo laredo"
+    "nombre-sanxenxo nombre-laredo"
+    ;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    padding-top: 2vh;
+}
+
+.vilanova{
+    border-radius: v.$bordes;
+    grid-area: vilanova;
+}
+.manga{
+    grid-area: manga;
+    border-radius: v.$bordes;
+}
+.sanxenxo{
+    grid-area: sanxenxo;
+    border-radius: v.$bordes;
+}
+.laredo{
+    grid-area: laredo;
+    border-radius: v.$bordes;
+}
+.nombre-vilanova{
+    font-size: 20px;
+    grid-area: nombre-vilanova;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    width: 303px;
+    background-color: v.$background;
+    color: v.$fuente-primaria;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    border-radius: v.$bordes;
+}
+.nombre-manga{
+    font-size: 20px;
+    grid-area: nombre-manga;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    width: 303px;
+    background-color: v.$background;
+    color: v.$fuente-primaria;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    border-radius: v.$bordes;
+}
+.nombre-sanxenxo{
+    font-size: 20px;
+    grid-area: nombre-sanxenxo;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    width: 303px;
+    background-color: v.$background;
+    color: v.$fuente-primaria;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    border-radius: v.$bordes;
+}
+.nombre-laredo{
+    font-size: 20px;
+    grid-area: nombre-laredo;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    width: 303px;
+    background-color: v.$background;
+    color: v.$fuente-primaria;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    border-radius: v.$bordes;
+}

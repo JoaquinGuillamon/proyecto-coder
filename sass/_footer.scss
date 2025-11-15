@@ -1,0 +1,51 @@
+@use "variables" as v;
+
+footer{
+    background-color: v.$background;
+    color: v.$fuente-primaria;
+    padding: 20px;
+    margin: 15px 0 0 0;
+    display: grid;
+    grid-template-areas: 
+    "a a . ."
+    "a a b b"
+    "a a . ."
+    "a a c c"
+    "a a . ."
+    ;
+    align-items: center;
+    justify-items: center;
+    h3{
+        font-family: v.$fuente;
+        text-align: center;
+    }
+    a{
+        text-align: center;
+    }
+    li{
+        list-style: none;
+    }
+    .der{
+        font-size: 15px;
+        grid-area: c;
+    }
+    .ayuntamiento-footer{
+        width: 10vw;
+        grid-area: b;
+    }
+    .mapa{
+        border-radius: v.$bordes;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        grid-area: a;
+    }
+}
+.footer-conocenos{
+    display: grid;
+    grid-template-areas: 
+    "b b c c"
+    ;
+    align-items: center;
+    justify-items: center;
+}

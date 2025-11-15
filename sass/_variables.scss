@@ -1,0 +1,15 @@
+
+$fuente-primaria: #ffff;
+$fuente-secundaria: #041741;
+$background: #041741;
+$color-acento: #008bdb;
+$fuente: poppins;
+$bordes: 10px;
+
+*{
+    font-family: $fuente;
+    color: $fuente-primaria;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
