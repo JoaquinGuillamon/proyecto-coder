@@ -1,1 +1,37 @@
 @use "variables" as v;
+.producto{
+    width: 20vw;
+}
+.tienda{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+.productos{
+    width: 20vw;
+    border-radius: v.$bordes;
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+
+.precios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: right;
+    font-size: 35px;
+    margin: 50px;
+}
+
+
+.precio{
+    padding: 2px 160px;
+    border-radius: 10px;
+    background-color: v.$color-acento;
+    color:v.$fuente-primaria;
+    font-size: 50px;
+}

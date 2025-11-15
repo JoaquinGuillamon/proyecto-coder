@@ -354,4 +354,40 @@ header nav ul li a {
   border-radius: 10px;
 }
 
+.producto {
+  width: 20vw;
+}
+
+.tienda {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+.tienda .productos {
+  width: 20vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.precios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  text-align: right;
+  font-size: 35px;
+  margin: 50px;
+}
+
+.precio {
+  padding: 2px 160px;
+  border-radius: 10px;
+  background-color: #008bdb;
+  color: white;
+  font-size: 50px;
+}
+
 /*# sourceMappingURL=styles.css.map */
