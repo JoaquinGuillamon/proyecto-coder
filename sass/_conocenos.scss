@@ -82,3 +82,11 @@
     margin: 2vw auto;
     border-radius: v.$bordes;
 }
+@media (min-width: 320px) and (max-width: 430px) {
+    .mapa-cono{
+        width: 100%;
+    }
+    .info-horarios{
+        width: 100%;
+    }
+}

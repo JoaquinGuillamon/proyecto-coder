@@ -100,9 +100,18 @@
   border-radius: 0.5vw;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .mapa-cono {
+    width: 100%;
+  }
+  .info-horarios {
+    width: 100%;
+  }
+}
 footer {
   background-color: #000536;
   color: white;
+  bottom: 0;
   padding: 1.5vw;
   margin: 1vw 0 0 0;
   display: grid;
@@ -144,6 +153,12 @@ footer .mapa {
   justify-items: center;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .mapa {
+    width: 80%;
+    height: 50%;
+  }
+}
 .cuerpo-galeria {
   display: grid;
   grid-template-areas: "imga imgb" "imgc imgd" "imge imgf";
@@ -229,6 +244,11 @@ header nav ul li a {
   text-decoration: none;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  header {
+    width: 100%;
+  }
+}
 .main-cont {
   background-color: white;
   color: #000536;
@@ -264,8 +284,13 @@ header nav ul li a {
   align-items: center;
   grid-area: foto-equipo;
 }
+.main-cont label {
+  color: #000536;
+  width: 100%;
+}
 .main-cont input {
   height: 5vh;
+  width: 100%;
   border-radius: 0.5vw;
   padding: 1vh 1vh 1vh 2vh;
   margin: 0vh 0vh 1.5vh 0vh;
@@ -278,6 +303,20 @@ header nav ul li a {
   padding: 0;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-flow: nowrap;
+  }
+  main-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .enviar {
+    background-color: red;
+  }
+}
 .cuerpo-torneos {
   display: grid;
   grid-template-areas: "vilanova manga" "nombre-vilanova nombre-manga" "sanxenxo laredo" "nombre-sanxenxo nombre-laredo";

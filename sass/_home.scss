@@ -35,8 +35,13 @@
         align-items: center ;
         grid-area: foto-equipo;
     }
+    label{
+        color: v.$fuente-secundaria;
+        width: 100%;
+    }
     input{
         height: 5vh;
+        width: 100%;
         border-radius: v.$bordes;
         padding: 1vh 1vh 1vh 2vh;
         margin: 0vh 0vh 1.5vh 0vh;
@@ -48,4 +53,19 @@
         background-color: v.$color-acento;
         padding: 0;
 }
+    }
+@media (min-width: 320px) and (max-width: 430px) {
+    form{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-flow:nowrap;
+    }
+    main-cont{
+        display: flex;
+        flex-direction: column;
+        ;
+    }
+    .enviar{
+        background-color: red;
+    }
 }

@@ -3,6 +3,7 @@
 footer{
     background-color: v.$background;
     color: v.$fuente-primaria;
+    bottom: 0;
     padding: 1.5vw;
     margin: 1vw 0 0 0;
     display: grid;
@@ -49,4 +50,10 @@ footer{
     ;
     align-items: center;
     justify-items: center;
+}
+@media (min-width: 320px) and (max-width: 430px) {
+    .mapa{
+        width: 80%;
+        height: 50%;
+    }
 }
