@@ -11,14 +11,14 @@
     text-transform: v.$mayuscula;
     font-weight: v.$negrita;
     text-align: center;
-    margin: 50px;
+    margin: 2vw;
 }
 .subtitulob{
     font-size: v.$titulos;
     text-transform: v.$mayuscula;
     font-weight: v.$negrita;
     text-align: center;
-    margin: 50px;
+    margin: 1.5vw;
 }
 .info{
     font-size: v.$texto;
@@ -32,7 +32,7 @@
     "hinfa hcade hjuve"
     ;
     text-align: center;
-    margin:100px 0;
+    margin:2vw 0;
     color: v.$fuente-primaria;
     gap: 1vw;
     justify-items: center;
@@ -75,10 +75,10 @@
 }
 
 .texto-info{
-    font-size: 20px;
+    font-size: v.$texto;
 }
 .mapa-cono{
     display: block;
-    margin: 50px auto;
+    margin: 2vw auto;
     border-radius: v.$bordes;
 }

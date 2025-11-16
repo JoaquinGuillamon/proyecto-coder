@@ -38,13 +38,14 @@
     input{
         height: 5vh;
         border-radius: v.$bordes;
-        padding: 2px 2px 2px 20px;
-        margin: 5px 5px 10px 5px;
+        padding: 1vh 1vh 1vh 2vh;
+        margin: 0vh 0vh 1.5vh 0vh;
     }
     .enviar{
-    font-size: v.$texto;
-    text-transform: v.$mayuscula;
-    color: v.$fuente-primaria;
-    background-color: v.$color-acento;
-    }
+        font-size: v.$texto;
+        text-transform: v.$mayuscula;
+        color: v.$fuente-primaria;
+        background-color: v.$color-acento;
+        padding: 0;
+}
 }

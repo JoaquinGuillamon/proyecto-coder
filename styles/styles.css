@@ -14,23 +14,23 @@
 }
 
 .subtituloa {
-  font-size: 40px;
+  font-size: 2.5vw;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  margin: 50px;
+  margin: 2vw;
 }
 
 .subtitulob {
-  font-size: 40px;
+  font-size: 2.5vw;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  margin: 50px;
+  margin: 1.5vw;
 }
 
 .info {
-  font-size: 25px;
+  font-size: 1.25vw;
   text-align: center;
 }
 
@@ -39,7 +39,7 @@
   color: #000536;
   grid-template-areas: "tinfa tcade tjuve" "hinfa hcade hjuve";
   text-align: center;
-  margin: 100px 0;
+  margin: 2vw 0;
   color: white;
   gap: 1vw;
   justify-items: center;
@@ -49,7 +49,7 @@
   background-color: #000536;
   width: 50%;
   padding: 2vw;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .tinfa {
@@ -64,7 +64,7 @@
   background-color: #000536;
   width: 50%;
   padding: 2vw;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .tcade {
@@ -79,7 +79,7 @@
   background-color: #000536;
   width: 50%;
   padding: 2vw;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .tjuve {
@@ -91,20 +91,20 @@
 }
 
 .texto-info {
-  font-size: 20px;
+  font-size: 1.25vw;
 }
 
 .mapa-cono {
   display: block;
-  margin: 50px auto;
-  border-radius: 10px;
+  margin: 2vw auto;
+  border-radius: 0.5vw;
 }
 
 footer {
   background-color: #000536;
   color: white;
-  padding: 20px;
-  margin: 15px 0 0 0;
+  padding: 1.5vw;
+  margin: 1vw 0 0 0;
   display: grid;
   grid-template-areas: "a a . ." "a a b b" "a a . ." "a a c c" "a a . .";
   align-items: center;
@@ -121,7 +121,7 @@ footer li {
   list-style: none;
 }
 footer .der {
-  font-size: 15px;
+  font-size: 1vw;
   grid-area: c;
 }
 footer .ayuntamiento-footer {
@@ -129,7 +129,7 @@ footer .ayuntamiento-footer {
   grid-area: b;
 }
 footer .mapa {
-  border-radius: 10px;
+  border-radius: 0.5vw;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -173,15 +173,15 @@ footer .mapa {
   margin-bottom: 5vh;
   width: 90%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 header {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 10px;
-  margin: 0 0 15px 0;
+  padding: 1vw;
+  margin: 0 0 1vw 0;
   background-color: #000536;
   color: white;
   font-family: poppins;
@@ -191,7 +191,7 @@ header {
 }
 header h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 2vw;
   text-transform: uppercase;
   align-content: center;
   font-weight: bold;
@@ -222,7 +222,7 @@ header nav {
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 1vw;
 }
 header nav ul li a {
   color: white;
@@ -246,14 +246,14 @@ header nav ul li a {
 }
 .main-cont .foto-equipo {
   grid-area: imgequipo;
-  border-radius: 10px;
+  border-radius: 0.5vw;
   width: 40vw;
 }
 .main-cont .juega {
-  font-size: 40px;
+  font-size: 2.5vw;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.5vw;
   color: #000536;
   text-align: center;
 }
@@ -266,15 +266,16 @@ header nav ul li a {
 }
 .main-cont input {
   height: 5vh;
-  border-radius: 10px;
-  padding: 2px 2px 2px 20px;
-  margin: 5px 5px 10px 5px;
+  border-radius: 0.5vw;
+  padding: 1vh 1vh 1vh 2vh;
+  margin: 0vh 0vh 1.5vh 0vh;
 }
 .main-cont .enviar {
-  font-size: 25px;
+  font-size: 1.25vw;
   text-transform: uppercase;
   color: white;
   background-color: #008bdb;
+  padding: 0;
 }
 
 .cuerpo-torneos {
@@ -287,75 +288,75 @@ header nav ul li a {
 }
 
 .vilanova {
-  border-radius: 10px;
+  border-radius: 0.5vw;
   grid-area: vilanova;
 }
 
 .manga {
   grid-area: manga;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .sanxenxo {
   grid-area: sanxenxo;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .laredo {
   grid-area: laredo;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .nombre-vilanova {
-  font-size: 25px;
+  font-size: 1.25vw;
   grid-area: nombre-vilanova;
   margin-bottom: 10vh;
   margin-top: 2vh;
-  width: 303px;
+  width: 20vw;
   background-color: #000536;
   color: white;
   text-align: center;
   padding: 2vh 0 2vh 0;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .nombre-manga {
-  font-size: 25px;
+  font-size: 1.25vw;
   grid-area: nombre-manga;
   margin-bottom: 10vh;
   margin-top: 2vh;
-  width: 303px;
+  width: 20vw;
   background-color: #000536;
   color: white;
   text-align: center;
   padding: 2vh 0 2vh 0;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .nombre-sanxenxo {
-  font-size: 25px;
+  font-size: 1.25vw;
   grid-area: nombre-sanxenxo;
   margin-bottom: 10vh;
   margin-top: 2vh;
-  width: 303px;
+  width: 20vw;
   background-color: #000536;
   color: white;
   text-align: center;
   padding: 2vh 0 2vh 0;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .nombre-laredo {
-  font-size: 25px;
+  font-size: 1.25vw;
   grid-area: nombre-laredo;
   margin-bottom: 10vh;
   margin-top: 2vh;
-  width: 303px;
+  width: 20vw;
   background-color: #000536;
   color: white;
   text-align: center;
   padding: 2vh 0 2vh 0;
-  border-radius: 10px;
+  border-radius: 0.5vw;
 }
 
 .producto {
@@ -363,15 +364,15 @@ header nav ul li a {
 }
 
 .tienda {
-  margin: 50px;
+  margin: 2vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 5.5vw;
 }
 .tienda .productos {
   width: 20vw;
-  border-radius: 10px;
+  border-radius: 0.5vw;
   display: flex;
   justify-content: space-between;
 }
@@ -380,18 +381,17 @@ header nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 6vw;
   text-align: right;
-  font-size: 35px;
-  margin: 50px;
+  margin: 2.5vw;
 }
 
 .precio {
-  padding: 2px 160px;
-  border-radius: 10px;
+  padding: 0.2vw 8.1vw;
+  border-radius: 0.5vw;
   background-color: #008bdb;
   color: white;
-  font-size: 50px;
+  font-size: 2.5vw;
 }
 
 /*# sourceMappingURL=styles.css.map */

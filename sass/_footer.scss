@@ -3,8 +3,8 @@
 footer{
     background-color: v.$background;
     color: v.$fuente-primaria;
-    padding: 20px;
-    margin: 15px 0 0 0;
+    padding: 1.5vw;
+    margin: 1vw 0 0 0;
     display: grid;
     grid-template-areas: 
     "a a . ."
@@ -26,7 +26,7 @@ footer{
         list-style: none;
     }
     .der{
-        font-size: 15px;
+        font-size: 1vw;
         grid-area: c;
     }
     .ayuntamiento-footer{

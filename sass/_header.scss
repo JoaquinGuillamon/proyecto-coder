@@ -5,8 +5,8 @@ header{
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 10px;
-    margin: 0 0 15px 0;
+    padding: 1vw;
+    margin: 0 0 1vw 0;
     background-color: v.$background;
     color: v.$fuente-primaria;
     font-family: v.$fuente;
@@ -15,7 +15,7 @@ header{
     align-content: center;
     h1{
         text-align: center;
-        font-size: 30px;
+        font-size: 2vw;
         text-transform: uppercase;
         align-content: center;
         font-weight: bold;
@@ -45,7 +45,7 @@ header{
         ul{
             list-style: none;
             display: flex;
-            gap: 30px;
+            gap: 1vw;
             li{
                 a{
                     color: v.$fuente-primaria;
@@ -55,3 +55,8 @@ header{
         }
     }
     }
+// @media (min-width: 320px) and (max-width: 430px) {
+//     header{
+//         width: 100%;
+//     }
+// }
