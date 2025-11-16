@@ -10,7 +10,7 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  color: #041741;
+  color: #000536;
 }
 
 .subtituloa {
@@ -36,7 +36,7 @@
 
 .info-horarios {
   display: grid;
-  color: #041741;
+  color: #000536;
   grid-template-areas: "tinfa tcade tjuve" "hinfa hcade hjuve";
   text-align: center;
   margin: 100px 0;
@@ -46,7 +46,7 @@
 }
 
 .infa {
-  background-color: #041741;
+  background-color: #000536;
   width: 50%;
   padding: 2vw;
   border-radius: 10px;
@@ -61,7 +61,7 @@
 }
 
 .cade {
-  background-color: #041741;
+  background-color: #000536;
   width: 50%;
   padding: 2vw;
   border-radius: 10px;
@@ -76,7 +76,7 @@
 }
 
 .juve {
-  background-color: #041741;
+  background-color: #000536;
   width: 50%;
   padding: 2vw;
   border-radius: 10px;
@@ -101,7 +101,7 @@
 }
 
 footer {
-  background-color: #041741;
+  background-color: #000536;
   color: white;
   padding: 20px;
   margin: 15px 0 0 0;
@@ -137,6 +137,7 @@ footer .mapa {
 }
 
 .footer-conocenos {
+  background-color: #000536;
   display: grid;
   grid-template-areas: "b b c c";
   align-items: center;
@@ -181,7 +182,7 @@ header {
   z-index: 100;
   padding: 10px;
   margin: 0 0 15px 0;
-  background-color: #041741;
+  background-color: #000536;
   color: white;
   font-family: poppins;
   display: flex;
@@ -197,7 +198,7 @@ header h1 {
   color: white;
 }
 header .container-fluid {
-  background-color: #041741;
+  background-color: #000536;
 }
 header .nav-link {
   color: white;
@@ -230,7 +231,7 @@ header nav ul li a {
 
 .main-cont {
   background-color: white;
-  color: #041741;
+  color: #000536;
   font-family: poppins;
   display: grid;
   grid-template-areas: "foto-equipo form";
@@ -253,7 +254,7 @@ header nav ul li a {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #041741;
+  color: #000536;
   text-align: center;
 }
 .main-cont .foto-equipo {
@@ -311,7 +312,7 @@ header nav ul li a {
   margin-bottom: 10vh;
   margin-top: 2vh;
   width: 303px;
-  background-color: #041741;
+  background-color: #000536;
   color: white;
   text-align: center;
   padding: 2vh 0 2vh 0;
@@ -324,7 +325,7 @@ header nav ul li a {
   margin-bottom: 10vh;
   margin-top: 2vh;
   width: 303px;
-  background-color: #041741;
+  background-color: #000536;
   color: white;
   text-align: center;
   padding: 2vh 0 2vh 0;
@@ -337,7 +338,7 @@ header nav ul li a {
   margin-bottom: 10vh;
   margin-top: 2vh;
   width: 303px;
-  background-color: #041741;
+  background-color: #000536;
   color: white;
   text-align: center;
   padding: 2vh 0 2vh 0;
@@ -350,7 +351,7 @@ header nav ul li a {
   margin-bottom: 10vh;
   margin-top: 2vh;
   width: 303px;
-  background-color: #041741;
+  background-color: #000536;
   color: white;
   text-align: center;
   padding: 2vh 0 2vh 0;
