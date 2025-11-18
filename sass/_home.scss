@@ -9,63 +9,95 @@
     ;
     justify-items: center;
     align-items: center;
+    margin: 2vw 4vw 0 0 ;
     form{
-        width: 40vw;
+        width: 30vw;
         display: flex;
         flex-flow: column wrap;
         grid-area: form;
+            .enviar{
+            font-size: v.$texto;
+            text-transform: v.$mayuscula;
+            color: v.$fuente-primaria;
+            background-color: v.$color-acento;
+            padding: 0;
+            transition: background-color 0.3s, opacity 0.3s, box-shadow 0.3s, transform 0.3s;
+
+
+
+
+            &:hover{
+            opacity: 1;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            transform: scale(1.03);
+            border-radius: 10px;
+            background-color: #000a33;
+            }
+        }
+            label{
+            color: v.$fuente-secundaria;
+            width: 100%;
+        }
+            input{
+            height: 5vh;
+            width: 100%;
+            border-radius: v.$bordes;
+            padding: 1vh 1vh 1vh 2vh;
+            margin: 0vh 0vh 1.5vh 0vh;
+        }
+            .juega{
+            font-size: v.$titulos;
+            text-transform: v.$mayuscula;
+            font-weight: v.$negrita;
+            margin-bottom: v.$bordes;
+            color: v.$fuente-secundaria;
+            text-align: center;
+        }
     }
+
     .foto-equipo{
-        grid-area: imgequipo;
-        border-radius: v.$bordes;
-        width: 40vw;
-    }
-    .juega{
-    font-size: v.$titulos;
-    text-transform: v.$mayuscula;
-    font-weight: v.$negrita;
-    margin-bottom: v.$bordes;
-    color: v.$fuente-secundaria;
-    text-align: center;
-    }
-    .foto-equipo{
+        width: 90%;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center ;
         grid-area: foto-equipo;
-    }
-    label{
-        color: v.$fuente-secundaria;
-        width: 100%;
-    }
-    input{
-        height: 5vh;
-        width: 100%;
         border-radius: v.$bordes;
-        padding: 1vh 1vh 1vh 2vh;
-        margin: 0vh 0vh 1.5vh 0vh;
     }
-    .enviar{
-        font-size: v.$texto;
-        text-transform: v.$mayuscula;
-        color: v.$fuente-primaria;
-        background-color: v.$color-acento;
-        padding: 0;
+
 }
+.enviar:hover{
+        opacity: 20%;
     }
-@media (min-width: 320px) and (max-width: 430px) {
-    form{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        flex-flow:nowrap;
-    }
-    main-cont{
+@media screen and (max-width: 430px) {
+    .main-cont {
         display: flex;
         flex-direction: column;
-        ;
-    }
-    .enviar{
-        background-color: red;
+        grid-template-areas: 
+            "foto-equipo"
+            "form";
+        margin: 8vw;
+        form {
+            width: 100%;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            .enviar {
+                background-color: v.$color-acento;
+                width: 100%;
+                border-radius: 10px;
+                font-size: 1rem;
+            }
+            .juega {
+                font-size: 1.4rem;
+                margin: 1.5rem;
+            }
+            input {
+                border-radius: 10px;
+            }
+        }
+        .foto-equipo {
+            width: 100%;
+            border-radius: 10px; // Cambiado a 10px
+        }
     }
 }

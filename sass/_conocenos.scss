@@ -82,11 +82,56 @@
     margin: 2vw auto;
     border-radius: v.$bordes;
 }
-@media (min-width: 320px) and (max-width: 430px) {
-    .mapa-cono{
-        width: 100%;
+@media screen and (max-width: 430px) {
+    .cuerpo-conocenos {
+        flex-direction: column;
+        align-items: center;
+        padding: 2vw;
+        margin: 1rem;
     }
-    .info-horarios{
+
+    .subtituloa,
+    .subtitulob {
+        font-size: 1.5rem;
+        margin: 4vw ;
+        text-align: center;
+        
+    }
+
+    .info {
+        font-size: 1rem;
+        text-align: center;
+        margin: 2vw;
+    }
+
+    .info-horarios {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
         width: 100%;
+        margin: 4vw 0;
+        text-align: center;
+    }
+
+    .infa,
+    .cade,
+    .juve {
+        width: 90%;
+        padding: 4vw 2vw;
+        margin: 0 auto;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+    .mapa-cono {
+        width: 100%;
+        margin: 4vw auto 2vw auto;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .texto-info {
+        font-size: 1rem;
+        margin-bottom: 2vw;
     }
 }

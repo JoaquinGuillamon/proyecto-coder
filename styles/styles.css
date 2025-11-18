@@ -100,12 +100,50 @@
   border-radius: 0.5vw;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
-  .mapa-cono {
-    width: 100%;
+@media screen and (max-width: 430px) {
+  .cuerpo-conocenos {
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    margin: 1rem;
+  }
+  .subtituloa,
+  .subtitulob {
+    font-size: 1.5rem;
+    margin: 4vw;
+    text-align: center;
+  }
+  .info {
+    font-size: 1rem;
+    text-align: center;
+    margin: 2vw;
   }
   .info-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
     width: 100%;
+    margin: 4vw 0;
+    text-align: center;
+  }
+  .infa,
+  .cade,
+  .juve {
+    width: 90%;
+    padding: 4vw 2vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .mapa-cono {
+    width: 100%;
+    margin: 4vw auto 2vw auto;
+    border-radius: 10px;
+    display: block;
+  }
+  .texto-info {
+    font-size: 1rem;
+    margin-bottom: 2vw;
   }
 }
 footer {
@@ -153,10 +191,41 @@ footer .mapa {
   justify-items: center;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
-  .mapa {
-    width: 80%;
-    height: 50%;
+@media (max-width: 430px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw 4vw;
+    margin: 2vw 0 0 0;
+    grid-template-areas: none;
+  }
+  footer .ayuntamiento-footer {
+    width: 30vw;
+    margin-bottom: 2vw;
+  }
+  footer .mapa {
+    width: 90vw;
+    height: 30vw;
+    border-radius: 10px;
+    margin: 5vw 20vw;
+  }
+  footer .der {
+    margin: 2vw;
+    font-weight: 200;
+    text-align: center;
+    order: 99;
+    font-size: 0.5rem;
+    margin-bottom: 2vw;
+    text-align: center;
+  }
+  .footer-conocenos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000536;
+    padding: 2vw 0;
+    grid-template-areas: none;
   }
 }
 .cuerpo-galeria {
@@ -189,8 +258,37 @@ footer .mapa {
   width: 90%;
   height: auto;
   border-radius: 0.5vw;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.cuerpo-galeria .img:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  border-radius: 10px;
 }
 
+@media screen and (max-width: 430px) {
+  .cuerpo-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh;
+  }
+  .cuerpo-galeria .a,
+  .cuerpo-galeria .b,
+  .cuerpo-galeria .c,
+  .cuerpo-galeria .d,
+  .cuerpo-galeria .e,
+  .cuerpo-galeria .f {
+    width: 100%;
+    margin-bottom: 3vh;
+  }
+  .cuerpo-galeria .img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+  }
+}
 header {
   position: sticky;
   top: 0;
@@ -226,10 +324,22 @@ header .navbar-collapse {
 }
 header .logo-header {
   height: 10vh;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+header .logo-header:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  border-radius: 10px;
 }
 header .ayuntamiento-header {
   height: 10vh;
   margin-left: 2vh;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+header .ayuntamiento-header:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  border-radius: 10px;
 }
 header nav {
   align-content: center;
@@ -244,9 +354,34 @@ header nav ul li a {
   text-decoration: none;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
+@media (max-width: 430px) {
   header {
+    padding: 2vw;
+    position: sticky;
+    top: 0;
     width: 100%;
+  }
+  header .logo-header {
+    height: 4vh;
+  }
+  header .ayuntamiento-header {
+    display: none;
+  }
+  header .header-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+    gap: 2vw;
+  }
+  header h1 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1vw;
+  }
+  header .container-fluid.w-100.justify-content-around {
+    flex-wrap: nowrap;
   }
 }
 .main-cont {
@@ -257,19 +392,41 @@ header nav ul li a {
   grid-template-areas: "foto-equipo form";
   justify-items: center;
   align-items: center;
+  margin: 2vw 4vw 0 0;
 }
 .main-cont form {
-  width: 40vw;
+  width: 30vw;
   display: flex;
   flex-flow: column wrap;
   grid-area: form;
 }
-.main-cont .foto-equipo {
-  grid-area: imgequipo;
-  border-radius: 0.5vw;
-  width: 40vw;
+.main-cont form .enviar {
+  font-size: 1.25vw;
+  text-transform: uppercase;
+  color: white;
+  background-color: #008bdb;
+  padding: 0;
+  transition: background-color 0.3s, opacity 0.3s, box-shadow 0.3s, transform 0.3s;
 }
-.main-cont .juega {
+.main-cont form .enviar:hover {
+  opacity: 1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  border-radius: 10px;
+  background-color: #000a33;
+}
+.main-cont form label {
+  color: #000536;
+  width: 100%;
+}
+.main-cont form input {
+  height: 5vh;
+  width: 100%;
+  border-radius: 0.5vw;
+  padding: 1vh 1vh 1vh 2vh;
+  margin: 0vh 0vh 1.5vh 0vh;
+}
+.main-cont form .juega {
   font-size: 2.5vw;
   text-transform: uppercase;
   font-weight: bold;
@@ -278,43 +435,47 @@ header nav ul li a {
   text-align: center;
 }
 .main-cont .foto-equipo {
+  width: 90%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   grid-area: foto-equipo;
-}
-.main-cont label {
-  color: #000536;
-  width: 100%;
-}
-.main-cont input {
-  height: 5vh;
-  width: 100%;
   border-radius: 0.5vw;
-  padding: 1vh 1vh 1vh 2vh;
-  margin: 0vh 0vh 1.5vh 0vh;
-}
-.main-cont .enviar {
-  font-size: 1.25vw;
-  text-transform: uppercase;
-  color: white;
-  background-color: #008bdb;
-  padding: 0;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
-  form {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    flex-flow: nowrap;
-  }
-  main-cont {
+.enviar:hover {
+  opacity: 20%;
+}
+
+@media screen and (max-width: 430px) {
+  .main-cont {
     display: flex;
     flex-direction: column;
+    grid-template-areas: "foto-equipo" "form";
+    margin: 8vw;
   }
-  .enviar {
-    background-color: red;
+  .main-cont form {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
+  .main-cont form .enviar {
+    background-color: #008bdb;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .main-cont form .juega {
+    font-size: 1.4rem;
+    margin: 1.5rem;
+  }
+  .main-cont form input {
+    border-radius: 10px;
+  }
+  .main-cont .foto-equipo {
+    width: 100%;
+    border-radius: 10px;
   }
 }
 .cuerpo-torneos {
@@ -329,21 +490,45 @@ header nav ul li a {
 .vilanova {
   border-radius: 0.5vw;
   grid-area: vilanova;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.vilanova:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  border-radius: 10px;
 }
 
 .manga {
   grid-area: manga;
   border-radius: 0.5vw;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.manga:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  border-radius: 10px;
 }
 
 .sanxenxo {
   grid-area: sanxenxo;
   border-radius: 0.5vw;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.sanxenxo:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  border-radius: 10px;
 }
 
 .laredo {
   grid-area: laredo;
   border-radius: 0.5vw;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.laredo:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  border-radius: 10px;
 }
 
 .nombre-vilanova {
@@ -398,8 +583,40 @@ header nav ul li a {
   border-radius: 0.5vw;
 }
 
+@media screen and (max-width: 430px) {
+  .cuerpo-torneos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw 2vw;
+  }
+  .cuerpo-torneos .vilanova,
+  .cuerpo-torneos .manga,
+  .cuerpo-torneos .sanxenxo,
+  .cuerpo-torneos .laredo {
+    width: 50vw;
+    margin-bottom: 4vw;
+    border-radius: 10px;
+  }
+  .cuerpo-torneos .nombre-vilanova,
+  .cuerpo-torneos .nombre-manga,
+  .cuerpo-torneos .nombre-sanxenxo,
+  .cuerpo-torneos .nombre-laredo {
+    width: 55vw;
+    font-size: 1rem;
+    margin: 2vw 0 6vw 0;
+    padding: 2vw 0;
+    border-radius: 10px;
+  }
+}
 .producto {
   width: 20vw;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.producto:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  border-radius: 10px;
 }
 
 .tienda {
@@ -431,6 +648,45 @@ header nav ul li a {
   background-color: #008bdb;
   color: white;
   font-size: 2.5vw;
+}
+
+@media screen and (max-width: 430px) {
+  .tienda {
+    flex-direction: column;
+    align-items: center;
+    gap: 6vw;
+    margin: 4vw 0;
+  }
+  .tienda .productos {
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 4vw;
+  }
+  .producto {
+    width: 90vw;
+    margin-bottom: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2vw;
+  }
+  .producto .precio {
+    font-size: 1.2rem;
+    padding: 2vw 0;
+    border-radius: 10px;
+    width: 55vw;
+    margin-bottom: 2vw;
+    background-color: #008bdb;
+    color: white;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
