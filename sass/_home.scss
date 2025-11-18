@@ -10,11 +10,16 @@
     justify-items: center;
     align-items: center;
     margin: 2vw 4vw 0 0 ;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+
     form{
         width: 30vw;
         display: flex;
         flex-flow: column wrap;
         grid-area: form;
+        animation-delay: 0.8s;
             .enviar{
             font-size: v.$texto;
             text-transform: v.$mayuscula;
@@ -44,6 +49,7 @@
             border-radius: v.$bordes;
             padding: 1vh 1vh 1vh 2vh;
             margin: 0vh 0vh 1.5vh 0vh;
+}
         }
             .juega{
             font-size: v.$titulos;
@@ -63,9 +69,10 @@
         align-items: center ;
         grid-area: foto-equipo;
         border-radius: v.$bordes;
+        animation-delay: 0.1s;
     }
 
-}
+
 .enviar:hover{
         opacity: 20%;
     }

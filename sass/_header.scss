@@ -67,16 +67,7 @@ header{
         }
     }
     }
-// @media (min-width: 320px) and (max-width: 430px) {
-//     header{
-//         width: 100%;
-//         img{
-//             width: 10vh;
-//             height: auto;
-//         }
-//     }
-    
-// }
+
 @media (max-width: 430px) {
     header {
         padding: 2vw;
@@ -85,7 +76,7 @@ header{
         width: 100%;
 
         .logo-header {
-            height: 4vh;
+            height: 6vh;
         }
 
         .ayuntamiento-header {

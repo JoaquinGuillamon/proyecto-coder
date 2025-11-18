@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .cuerpo-conocenos {
   display: flex;
   flex-flow: column;
@@ -362,7 +368,7 @@ header nav ul li a {
     width: 100%;
   }
   header .logo-header {
-    height: 4vh;
+    height: 6vh;
   }
   header .ayuntamiento-header {
     display: none;
@@ -393,12 +399,16 @@ header nav ul li a {
   justify-items: center;
   align-items: center;
   margin: 2vw 4vw 0 0;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
 }
 .main-cont form {
   width: 30vw;
   display: flex;
   flex-flow: column wrap;
   grid-area: form;
+  animation-delay: 0.8s;
 }
 .main-cont form .enviar {
   font-size: 1.25vw;
@@ -426,7 +436,7 @@ header nav ul li a {
   padding: 1vh 1vh 1vh 2vh;
   margin: 0vh 0vh 1.5vh 0vh;
 }
-.main-cont form .juega {
+.main-cont .juega {
   font-size: 2.5vw;
   text-transform: uppercase;
   font-weight: bold;
@@ -434,7 +444,8 @@ header nav ul li a {
   color: #000536;
   text-align: center;
 }
-.main-cont .foto-equipo {
+
+.foto-equipo {
   width: 90%;
   display: flex;
   flex-flow: column wrap;
@@ -442,6 +453,7 @@ header nav ul li a {
   align-items: center;
   grid-area: foto-equipo;
   border-radius: 0.5vw;
+  animation-delay: 0.1s;
 }
 
 .enviar:hover {

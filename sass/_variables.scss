@@ -17,10 +17,9 @@ $mayuscula: uppercase;
     padding: 0;
     box-sizing: border-box;
 }
-// @mixin _flex($direction, $justify, $align, $wrap){
-//     display: flex;
-//     flex-direction: $direction;
-//     justify-content: $justify;
-//     align-items: $align;
-//     flex-wrap: $wrap;
-// }
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
